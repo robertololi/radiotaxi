@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id central:</strong>
+  <%= @centrale.id_central %>
+</p>
+
+<p>
+  <strong>Responsable:</strong>
+  <%= @centrale.responsable %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @centrale.direccion %>
+</p>
+
+<p>
+  <strong>Comuna:</strong>
+  <%= @centrale.comuna %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @centrale.telefono %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @centrale.correo %>
+</p>
+
+<%= link_to 'Edit', edit_centrale_path(@centrale) %> |
+<%= link_to 'Back', centrales_path %>

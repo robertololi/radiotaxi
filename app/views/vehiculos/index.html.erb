@@ -1,0 +1,37 @@
+<h1>Lista de vehiculos</h1>
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>Id vehiculo</th>
+      <th>Conductor</th>
+      <th>Apellido</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Id central</th>
+      <th>Telefono</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehiculos.each do |vehiculo| %>
+      <tr>
+        <td><%= vehiculo.id_vehiculo %></td>
+        <td><%= vehiculo.conductor %></td>
+        <td><%= vehiculo.apellido %></td>
+        <td><%= vehiculo.marca %></td>
+        <td><%= vehiculo.modelo %></td>
+        <td><%= vehiculo.id_central %></td>
+        <td><%= vehiculo.telefono %></td>
+        <td><%= link_to 'Mostrar', vehiculo %></td>
+        <td><%= link_to 'Editar', edit_vehiculo_path(vehiculo) %></td>
+        <td><%= link_to 'Eliminar', vehiculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo Vehiculo', new_vehiculo_path %>

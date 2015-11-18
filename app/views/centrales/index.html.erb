@@ -1,0 +1,35 @@
+<h1>Lista de Centrales</h1>
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>Id central</th>
+      <th>Responsable</th>
+      <th>Direccion</th>
+      <th>Comuna</th>
+      <th>Telefono</th>
+      <th>Correo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @centrales.each do |centrale| %>
+      <tr>
+        <td><%= centrale.id_central %></td>
+        <td><%= centrale.responsable %></td>
+        <td><%= centrale.direccion %></td>
+        <td><%= centrale.comuna %></td>
+        <td><%= centrale.telefono %></td>
+        <td><%= centrale.correo %></td>
+        <td><%= link_to ' Mostrar', centrale %></td>
+        <td><%= link_to ' Editar', edit_centrale_path(centrale) %></td>
+        <td><%= link_to ' Eliminar', destroy_centrale_session_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Central', new_centrale_path %>

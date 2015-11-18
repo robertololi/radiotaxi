@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_contrato: 1
+  id_cliente: MyString
+  id_vehiculo: MyString
+  id_central: MyString
+  direccion: MyString
+  destino: MyString
+  valor: MyString
+
+two:
+  id_contrato: 1
+  id_cliente: MyString
+  id_vehiculo: MyString
+  id_central: MyString
+  direccion: MyString
+  destino: MyString
+  valor: MyString

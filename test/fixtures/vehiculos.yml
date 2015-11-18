@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_vehiculo: MyString
+  conductor: MyString
+  apellido: MyString
+  marca: MyString
+  modelo: MyString
+  id_central: MyString
+  telefono: 1
+
+two:
+  id_vehiculo: MyString
+  conductor: MyString
+  apellido: MyString
+  marca: MyString
+  modelo: MyString
+  id_central: MyString
+  telefono: 1

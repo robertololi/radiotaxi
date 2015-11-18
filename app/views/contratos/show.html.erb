@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id contrato:</strong>
+  <%= @contrato.id_contrato %>
+</p>
+
+<p>
+  <strong>Id cliente:</strong>
+  <%= @contrato.id_cliente %>
+</p>
+
+<p>
+  <strong>Id vehiculo:</strong>
+  <%= @contrato.id_vehiculo %>
+</p>
+
+<p>
+  <strong>Id central:</strong>
+  <%= @contrato.id_central %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @contrato.direccion %>
+</p>
+
+<p>
+  <strong>Destino:</strong>
+  <%= @contrato.destino %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @contrato.valor %>
+</p>
+
+<%= link_to 'Edit', edit_contrato_path(@contrato) %> |
+<%= link_to 'Back', contratos_path %>

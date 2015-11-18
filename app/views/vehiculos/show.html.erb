@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id vehiculo:</strong>
+  <%= @vehiculo.id_vehiculo %>
+</p>
+
+<p>
+  <strong>Conductor:</strong>
+  <%= @vehiculo.conductor %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @vehiculo.apellido %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @vehiculo.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @vehiculo.modelo %>
+</p>
+
+<p>
+  <strong>Id central:</strong>
+  <%= @vehiculo.id_central %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @vehiculo.telefono %>
+</p>
+
+<p>
+  <h2>Clientes del Vehiculo:</h2>
+  <%= @clientes.each do |cliente| %>
+    <strong>Nombre:</strong>
+    <%= cliente.nombre %>
+    <br>
+    <% end %>
+</p>
+
+<%= link_to 'Edit', edit_vehiculo_path(@vehiculo) %> |
+<%= link_to 'Back', vehiculos_path %>
