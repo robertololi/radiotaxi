@@ -24,7 +24,7 @@
         <td><%= centrale.correo %></td>
         <td><%= link_to ' Mostrar', centrale %></td>
         <td><%= link_to ' Editar', edit_centrale_path(centrale) %></td>
-        <td><%= link_to ' Eliminar', destroy_centrale_session_path, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to ' Eliminar', centrale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
